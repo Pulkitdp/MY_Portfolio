@@ -1,0 +1,61 @@
+.contact-lower{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.conact-detail{
+    margin-left: 20px;
+}
+
+.icon{
+    font-size: 28px;
+}
+
+.contact_no_etx{
+    font-size: 12px;
+}
+
+.contact-right{
+    width: 50%;
+}
+
+.contactme-footer{
+    background-image: url("../../assets/Home/bdcolor.png");
+    height: 180px;
+}
+
+.contactme-footer{
+    padding: 30px 40px;
+    text-align: left;
+    color: whitesmoke;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pulkit{
+    font-size: 28px;
+    color: #FF5823;
+}
+
+.pulkit-pos{
+    font-size: 14px;
+}
+
+.gotohome{
+    color: whitesmoke;
+}
+
+.gotohome:hover{
+    scale: 1.5;
+    color: #FF5823;
+    transition: 0.25s;
+}

@@ -1,0 +1,6 @@
+.footer{
+    height: 120px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-image: url('./../../assets/Home/footer.png');
+}
