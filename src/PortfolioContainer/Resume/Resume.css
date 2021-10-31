@@ -1,0 +1,127 @@
+.resume-section{
+    margin: 40px 80px;
+}
+
+.details-section{
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.resume-left-container{
+    margin-right :15px;
+    /* box-shadow: 1px 0px 0px black; */
+}
+
+.left-nav{
+    cursor: pointer;
+    text-align: left;
+    width: 180px;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.left-nav-text{
+    margin-left: 12px;
+}
+
+/* .left-nav:hover{
+    color: whitesmoke;
+    /* border: solid 2px #1f2235; */
+    /* background-color: #1f2235; */
+/* } */
+
+.resume-right-container{
+    flex-grow: 1;
+    max-width: 1000px
+}
+
+.institution{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.institution-list{
+    color: #FF5823;
+    font-size: 28px;
+    text-align: left;
+}
+
+.institution-name{
+    font-size: 18px;
+}
+
+.institution-course{
+    float: left;
+    margin-left: 40px;
+}
+
+.institution-duration{
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    background-color: #FF5823;
+}
+
+.active{
+    color: whitesmoke;
+    background-color: #1f2235;
+}
+
+ul, ol{
+    margin-bottom: 0;
+}
+
+.role-details{
+    text-align: left;
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.experince-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exp{
+    margin-bottom: 12px;
+}
+
+.position{
+    margin-left: 40px;
+}
+
+.right-skills{
+    text-align: left;
+}
+
+.skills-list{
+    color: #FF5823;
+    font-size: 30px;
+    
+}
+
+.skills-parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-list-style{
+    font-size: 18px;
+}
+
+.hobby-text{
+    font-size: 14px;
+    margin-left: 40px;
+}

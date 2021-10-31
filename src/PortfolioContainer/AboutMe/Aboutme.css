@@ -1,0 +1,53 @@
+.splitter{
+    width: 280px;
+}
+
+.details-block{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40 0;
+}
+
+.details{
+    width: 800px;
+    box-shadow: 0px 0px 8px black;
+    margin: 20px 0;
+    display: flex;
+}
+
+.aboutMeImage{
+    width: 400px;
+}
+
+.right-block{
+    padding: 30px;
+    flex: 1;
+    display: grid;
+}
+
+.brief{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.hightlight-header{
+    text-align: left;
+}
+
+.heighlight-list li{
+    color: #ff5823;
+    font-size: 26px;
+    text-align: left;
+    line-height: 16px;
+}
+
+.heighlight-list li span{
+    text-align: left;
+    font-size: 13px;
+    color: black;
+}
+
+/* .aboutme-buttons{
+    margin: 20px 0;
+} */
