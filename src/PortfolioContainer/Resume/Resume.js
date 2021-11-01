@@ -220,7 +220,7 @@ class Resume extends React.Component {
                           <span className="institution-name">Dummy Bytes</span>
                         </li>
                       </ul>
-                      <span className="position">Machine Learning Traniee</span>
+                      <span className="position">Machine Learning Trainee</span>
                     </div>
                     <div className="institution-duration">Jun 19 - Jul 19</div>
                   </div>

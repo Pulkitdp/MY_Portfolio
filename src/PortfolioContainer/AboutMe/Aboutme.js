@@ -46,7 +46,7 @@ export default function Aboutme() {
               </ul>
             </div>
             <div className="aboutme-buttons">
-              <button className="btn primary-btn"> Hire Me </button>
+            <a href="#ContactMe"><button className="btn primary-btn"> Hire Me </button></a>
               <a href="Pulkit_Resume.pdf" download="PulkitResume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>

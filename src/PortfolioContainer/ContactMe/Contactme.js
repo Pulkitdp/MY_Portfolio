@@ -1,19 +1,30 @@
 import React from "react";
 import "./Contactme.css";
 import splitImage from "../../assets/AboutMe/split-2.png";
+import emailjs from "emailjs-com";
 
-class Contactme extends React.Component {
-  constructor(props) {
-    super(props);
-    this.State = {
-      senderName: "",
-      senderEmail: "",
-      senderSubject: "",
-      senderMessage: "",
-    };
-  }
+export default function Contactme (){
+    function sendEmail(e) {
+      emailjs
+        .sendForm(
+          "service_xju026e",
+          "template_j1sujkp",
+          e.target,
+          "user_QgIPwzpTOrkVbnPkYfeLj"
+        )
+        .then(
+          (result) => {
+            console.log(result);
+            alert("sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
 
-  render() {
+      e.target.reset();
+    }
+
     return (
       <section id="ContactMe">
         <div className="contact-upper">
@@ -53,74 +64,65 @@ class Contactme extends React.Component {
           </div>
           <div className="contact-right">
             <p>Interested to work together? - Let's talk</p>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your Name"
-                    className="form-control"
-                    onChange={(e) => {
-                      this.setState({ senderName: e.target.value });
-                    }}
-                  />
+            <form onSubmit={sendEmail}>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      className="form-control"
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email Address"
+                      className="form-control"
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      className="form-control"
+                      required={true}
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email Address"
-                    className="form-control"
-                    onChange={(e) => {
-                      this.setState({ senderEmail: e.target.value });
-                    }}
-                  />
-                </div>
+              <div class="form-group">
+                <textarea
+                  className="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  required={true}
+                  style={{ resize: "none", height: 150 }}
+                />
               </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Subject"
-                    className="form-control"
-                    onChange={(e) => {
-                      this.setState({ senderSubject: e.target.value });
-                    }}
-                  />
-                </div>
+              <div class="submit-btn">
+                <input
+                  type="submit"
+                  className="btn btn-general highlighted-btn"
+                  role="button"
+                  title="Submit"
+                  value="Submit"
+                />
               </div>
-            </div>
-            <div class="form-group">
-              <textarea
-                className="form-control"
-                id="message"
-                name="message"
-                placeholder="Message"
-                onChange={(e) => {
-                  this.setState({ senderMessage: e.target.value });
-                }}
-                style={{ resize: "none", height: 150 }}
-              />
-            </div>
-            <div class="submit-btn">
-              <input
-                type="submit"
-                className="btn btn-general highlighted-btn"
-                role="button"
-                title="Submit"
-                value="Submit"
-                onClick={() => {
-                  console.log(this.state.senderMessage);
-                }}
-              />
-            </div>
+            </form>
           </div>
         </div>
         <div className="contactme-footer">
@@ -161,7 +163,4 @@ class Contactme extends React.Component {
         </div>
       </section>
     );
-  }
 }
-
-export default Contactme;
