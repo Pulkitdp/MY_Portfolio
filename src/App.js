@@ -1,23 +1,20 @@
 import './App.css';
-import Profile from './PortfolioContainer/Home/Profile';
-import Header from './PortfolioContainer/Home/Header';
-import Footer from './PortfolioContainer/Home/Footer';
+import Fade from 'react-reveal/Fade';
 import Aboutme from './PortfolioContainer/AboutMe/Aboutme';
 import Resume from './PortfolioContainer/Resume/Resume';
 import Testimonial from './PortfolioContainer/Testimonial/Testimonial';
 import Contactme from './PortfolioContainer/ContactMe/Contactme';
+import Home from './PortfolioContainer/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Profile/>
-      <Footer />
+    <Fade className="App">
+      <Home />
       <Aboutme />
       <Resume />
       <Testimonial />
       <Contactme />
-    </div>
+    </Fade>
   );
 }
 

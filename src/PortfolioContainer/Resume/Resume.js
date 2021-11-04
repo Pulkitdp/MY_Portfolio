@@ -29,7 +29,7 @@ class Resume extends React.Component {
   }
 
   progressBar(progress){
-    return <ProgressBar isLabelVisible={false} completed={progress} width={200} borderRadius="0" bgColor="#1f2235" baseBgColor="#FF5823" margin="5px 0 15px 0"/>;
+    return <ProgressBar isLabelVisible={false} completed={progress} width={'200px'} borderRadius="0" bgColor="#1f2235" baseBgColor="#FF5823" margin="5px 0 15px 0"/>;
   }
 
   render() {
@@ -97,7 +97,7 @@ class Resume extends React.Component {
             </div>
           </div>
           <div className="resume-right-container">
-            {this.state.selectedTab == "education" && (
+            {this.state.selectedTab === "education" && (
               <div className="right-education">
                 <div className="institution">
                   <div className="institution-details">
@@ -142,7 +142,7 @@ class Resume extends React.Component {
                 </div>
               </div>
             )}
-            {this.state.selectedTab == "experince" && (
+            {this.state.selectedTab === "experince" && (
               <div className="right-experince">
                 <div className="exp">
                   <div className="experince-details">
@@ -235,10 +235,10 @@ class Resume extends React.Component {
                 </div>
               </div>
             )}
-            {this.state.selectedTab == "projects" && (
+            {this.state.selectedTab === "projects" && (
               <div className="right-projects">Projects</div>
             )}
-            {this.state.selectedTab == "skills" && (
+            {this.state.selectedTab === "skills" && (
               <div className="right-skills">
                 <ul className="skills-parent">
                   <div>
@@ -266,7 +266,7 @@ class Resume extends React.Component {
                 </ul>
               </div>
             )}
-            {this.state.selectedTab == "interest" && (
+            {this.state.selectedTab === "interest" && (
               <div className="right-interest">
                 <div className="hobby">
                   <ul><li className="skills-list"><span className="skills-list-style">Music</span></li></ul>
