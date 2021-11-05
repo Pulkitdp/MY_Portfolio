@@ -131,3 +131,7 @@ ul, ol{
     font-size: 18px;
     color: #FF5823;
 }
+
+@media screen and (max-width: 500px){
+    
+}

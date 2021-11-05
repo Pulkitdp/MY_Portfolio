@@ -38,3 +38,9 @@
     scale: 1.5;
     transition: 0.5s;
 }
+
+@media screen and (max-width: 500px){
+    .headers{
+        display: none;
+    }
+}
