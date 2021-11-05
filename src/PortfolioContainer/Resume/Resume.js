@@ -7,7 +7,7 @@ class Resume extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: "education",
+      selectedTab: "experince",
     };
   }
 
@@ -28,8 +28,18 @@ class Resume extends React.Component {
       .classList.add("active");
   }
 
-  progressBar(progress){
-    return <ProgressBar isLabelVisible={false} completed={progress} width={'200px'} borderRadius="0" bgColor="#1f2235" baseBgColor="#FF5823" margin="5px 0 15px 0"/>;
+  progressBar(progress) {
+    return (
+      <ProgressBar
+        isLabelVisible={false}
+        completed={progress}
+        width={"200px"}
+        borderRadius="0"
+        bgColor="#1f2235"
+        baseBgColor="#FF5823"
+        margin="5px 0 15px 0"
+      />
+    );
   }
 
   render() {
@@ -178,17 +188,15 @@ class Resume extends React.Component {
                           <span className="institution-name">MAQ Software</span>
                         </li>
                       </ul>
-                      <span className="position">Associate Software Engineer</span>
+                      <span className="position">
+                        Associate Software Engineer
+                      </span>
                     </div>
                     <div className="institution-duration">Mar 21 - Nov 21</div>
                   </div>
                   <div className="role-details">
-                    <div>
-                      - Responsible for writing efficient code.
-                    </div>
-                    <div>
-                      - Created Power BI custom visuals in ReactJs.
-                    </div>
+                    <div>- Responsible for writing efficient code.</div>
+                    <div>- Created Power BI custom visuals in ReactJs.</div>
                   </div>
                 </div>
                 <div className="exp">
@@ -204,12 +212,8 @@ class Resume extends React.Component {
                     <div className="institution-duration">Nov 20 - Mar 21</div>
                   </div>
                   <div className="role-details">
-                    <div>
-                      - Worked on Azure devOps and Azure databricks.
-                    </div>
-                    <div>
-                      - Helped team to creat Power BI reports.
-                    </div>
+                    <div>- Worked on Azure devOps and Azure databricks.</div>
+                    <div>- Helped team to creat Power BI reports.</div>
                   </div>
                 </div>
                 <div className="exp">
@@ -226,7 +230,8 @@ class Resume extends React.Component {
                   </div>
                   <div className="role-details">
                     <div>
-                      - Worked on Machine Learning algorithms, Pre-processing the data.
+                      - Worked on Machine Learning algorithms, Pre-processing
+                      the data.
                     </div>
                     <div>
                       - Studied various libraries like NLTK, Sklearn etc.
@@ -236,32 +241,145 @@ class Resume extends React.Component {
               </div>
             )}
             {this.state.selectedTab === "projects" && (
-              <div className="right-projects">Projects</div>
+              <div className="right-projects">
+                <div className="exp">
+                  <div className="experince-details">
+                    <div className="institution-details">
+                      <ul>
+                        <li className="institution-list">
+                          <span className="project-name">Personal Portfolio website</span>
+                        </li>
+                      </ul>
+                      <span className="position">ReactJs, HTML, CSS, GitHub</span>
+                    </div>
+                    <a href="https://github.com/Pulkitdp/MY_Portfolio" title="Click to view the project" className="institution-duration">Open</a>
+                  </div>
+                  <div className="role-details">
+                    <div>- A portfolio website is good way to show your work and let others reach out for you.</div>
+                    <div>- Published on Gitpages.</div>
+                  </div>
+                </div>
+                <div className="exp">
+                  <div className="experince-details">
+                    <div className="institution-details">
+                      <ul>
+                        <li className="institution-list">
+                          <span
+                            className="project-name"
+                          >
+                            Website Template
+                          </span>
+                        </li>
+                      </ul>
+                      <span className="position">
+                        HTML, CSS, BootStrap, JavaScript, JQuery
+                      </span>
+                    </div>
+                    <a href="https://darkempire.netlify.app/"
+                            title="Click to view the project" className="institution-duration">Open</a>
+                  </div>
+                  <div className="role-details">
+                    <div>- A simple and creative website design.</div>
+                    <div>
+                      - Developed a website template in above mentioned
+                      technology.
+                    </div>
+                  </div>
+                </div>
+                <div className="exp">
+                  <div className="experince-details">
+                    <div className="institution-details">
+                      <ul>
+                        <li className="institution-list">
+                          <span className="institution-name">Ecommerce website</span>
+                        </li>
+                      </ul>
+                      <span className="position">HTML, Tailwind CSS, TypeScipt and Firebase</span>
+                    </div>
+                  </div>
+                  <div className="role-details">
+                    <div>
+                      - Simple website in which you can add/delete products in your cart.
+                    </div>
+                    <div>
+                      - Fetch products details from realtime database.
+                    </div>
+                  </div>
+                </div>
+                <div className="exp">
+                  <div className="experince-details">
+                    <div className="institution-details">
+                      <ul>
+                        <li className="institution-list">
+                          <span className="institution-name">
+                            Quora Similarity Problem
+                          </span>
+                        </li>
+                      </ul>
+                      <span className="position">
+                        Python, Machine Learning, NLP, NLTK
+                      </span>
+                    </div>
+                  </div>
+                  <div className="role-details">
+                    <div>
+                      - Quora tries very hard to eliminate duplicate questions,
+                      but NLP is a very hard problem. With so many ways to
+                      describe one and the same meaning.
+                    </div>
+                    <div>
+                      - Used using TF-IDF vectors for finding similarity
+                      measures.
+                    </div>
+                    <div>
+                      - It can tell if the given two questions are same or not.
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
             {this.state.selectedTab === "skills" && (
               <div className="right-skills">
                 <ul className="skills-parent">
                   <div>
-                    <li className="skills-list"><span className="skills-list-style">JavaScript</span></li>
+                    <li className="skills-list">
+                      <span className="skills-list-style">JavaScript</span>
+                    </li>
                     {this.progressBar(75)}
-                    <li className="skills-list"><span className="skills-list-style">ReactJS</span></li>
+                    <li className="skills-list">
+                      <span className="skills-list-style">ReactJS</span>
+                    </li>
                     {this.progressBar(80)}
-                    <li className="skills-list"><span className="skills-list-style">TypeScript</span></li>
+                    <li className="skills-list">
+                      <span className="skills-list-style">TypeScript</span>
+                    </li>
                     {this.progressBar(70)}
-                    <li className="skills-list"><span className="skills-list-style">HTML</span></li>
+                    <li className="skills-list">
+                      <span className="skills-list-style">HTML</span>
+                    </li>
                     {this.progressBar(80)}
-                    <li className="skills-list"><span className="skills-list-style">CSS</span></li>
+                    <li className="skills-list">
+                      <span className="skills-list-style">CSS</span>
+                    </li>
                     {this.progressBar(85)}
                   </div>
                   <div>
-                  <li className="skills-list"><span className="skills-list-style">Core Java</span></li>
-                  {this.progressBar(80)}
-                  <li className="skills-list"><span className="skills-list-style">C/C++</span></li>
-                  {this.progressBar(70)}
-                  <li className="skills-list"><span className="skills-list-style">Python</span></li>
-                  {this.progressBar(60)}
-                  <li className="skills-list"><span className="skills-list-style">Tailwind CSS</span></li>
-                  {this.progressBar(65)}
+                    <li className="skills-list">
+                      <span className="skills-list-style">Core Java</span>
+                    </li>
+                    {this.progressBar(80)}
+                    <li className="skills-list">
+                      <span className="skills-list-style">C/C++</span>
+                    </li>
+                    {this.progressBar(70)}
+                    <li className="skills-list">
+                      <span className="skills-list-style">Python</span>
+                    </li>
+                    {this.progressBar(60)}
+                    <li className="skills-list">
+                      <span className="skills-list-style">Tailwind CSS</span>
+                    </li>
+                    {this.progressBar(65)}
                   </div>
                 </ul>
               </div>
@@ -269,16 +387,39 @@ class Resume extends React.Component {
             {this.state.selectedTab === "interest" && (
               <div className="right-interest">
                 <div className="hobby">
-                  <ul><li className="skills-list"><span className="skills-list-style">Music</span></li></ul>
-                  <span className="hobby-text">I love listening to music because i feel happy/ excited through it.</span>
+                  <ul>
+                    <li className="skills-list">
+                      <span className="skills-list-style">Music</span>
+                    </li>
+                  </ul>
+                  <span className="hobby-text">
+                    I love listening to music because i feel happy/ excited
+                    through it.
+                  </span>
                 </div>
                 <div className="hobby">
-                  <ul><li className="skills-list"><span className="skills-list-style">Competitive Gaming</span></li></ul>
-                  <span className="hobby-text">Apart from tech enthusiast and code writer, i also love to play video games.</span>
+                  <ul>
+                    <li className="skills-list">
+                      <span className="skills-list-style">
+                        Competitive Gaming
+                      </span>
+                    </li>
+                  </ul>
+                  <span className="hobby-text">
+                    Apart from tech enthusiast and code writer, i also love to
+                    play video games.
+                  </span>
                 </div>
                 <div className="hobby">
-                  <ul><li className="skills-list"><span className="skills-list-style">Exercise</span></li></ul>
-                  <span className="hobby-text">Excercise is one of my favourite hobby because it makes me feel energetic and strong.</span>
+                  <ul>
+                    <li className="skills-list">
+                      <span className="skills-list-style">Exercise</span>
+                    </li>
+                  </ul>
+                  <span className="hobby-text">
+                    Excercise is one of my favourite hobby because it makes me
+                    feel energetic and strong.
+                  </span>
                 </div>
               </div>
             )}

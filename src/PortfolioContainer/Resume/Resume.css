@@ -126,3 +126,8 @@ ul, ol{
     font-size: 14px;
     margin-left: 40px;
 }
+
+.project-name{
+    font-size: 18px;
+    color: #FF5823;
+}
