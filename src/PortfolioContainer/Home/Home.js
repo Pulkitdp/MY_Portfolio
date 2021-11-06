@@ -5,10 +5,10 @@ import Footer from './Footer';
 
 export default function Home(){
     return(
-        <>
+        <section id="Home">
             <Header />
             <Profile/>
             <Footer />
-        </>
+        </section>
     );
 }
