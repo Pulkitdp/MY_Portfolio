@@ -162,7 +162,7 @@ body{
 
 @media screen and (max-width: 500px){
     .profile-picture{
-        margin: 0px !important;
+        margin: 20px 0 0 0 !important;
         width: 320px;
         height: 320px;
     }

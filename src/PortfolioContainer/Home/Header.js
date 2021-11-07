@@ -4,7 +4,6 @@ import "./Header.css";
 export default function Header() {
   return (
     <section id="headers" className="headers">
-      {/* <span className="title">🥶</span>                 */}
       <div className="items" id="items">
         <a href="#AboutMe" className="header">
           About Me
@@ -24,8 +23,9 @@ export default function Header() {
       </div>
       <div className="header-icons">
         <i style={{cursor: "pointer", color: "white"}} class="fas fa-ellipsis-h" onClick={() => {
-            document.querySelector(".headers").style.backgroundColor= "rgba(0, 0, 0, 0.5)";
-            document.querySelector(".items").style.display = "block";
+            document.querySelector(".headers").style.backgroundColor= "rgba(0, 0, 0, 0.8)";
+            document.querySelector(".items").style.display = "grid";
+            document.querySelector(".items").style.justifyContent = "right";
             document.querySelector(".fa-times").style.display = "block";
             document.querySelector(".fa-ellipsis-h").style.display = "none";
         }}></i>

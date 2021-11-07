@@ -46,6 +46,7 @@
 @media screen and (max-width: 500px){
     .items{
         display: none;
+        width: 75%;
     }
 
     .header-icons{
@@ -58,6 +59,16 @@
         height: 100%;
         width: 100%;
         position: fixed;
-        z-index: 9999;
+        z-index: 3;
+    }
+
+    .header{
+        display: block;
+        text-align: center;
+        padding: 0 25px;
+        font-size: 22px;
+        font-weight: 400;
+        color: whitesmoke;
+        margin-bottom: 20px;
     }
 }

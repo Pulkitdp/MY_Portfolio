@@ -133,5 +133,11 @@ ul, ol{
 }
 
 @media screen and (max-width: 500px){
-    
+    .details-section{
+        display: block;
+    }
+
+    .left-nav{
+        
+    }
 }
