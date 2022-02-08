@@ -252,7 +252,7 @@ class Resume extends React.Component {
                       </ul>
                       <span className="position">ReactJs, HTML, CSS, GitHub</span>
                     </div>
-                    <a href="https://github.com/Pulkitdp/MY_Portfolio" title="Click to view the project" className="institution-duration">Open</a>
+                    <a href="https://pulkitdp.github.io/MY_Portfolio/" title="Click to view the project" className="institution-duration">Open</a>
                   </div>
                   <div className="role-details">
                     <div>- A portfolio website is good way to show your work and let others reach out for you.</div>
