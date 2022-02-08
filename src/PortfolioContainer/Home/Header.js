@@ -1,4 +1,5 @@
 import React from "react";
+import index from "react-typical";
 import "./Header.css";
 
 export default function Header() {
@@ -22,19 +23,36 @@ export default function Header() {
         </a>
       </div>
       <div className="header-icons">
-        <i style={{cursor: "pointer", color: "white"}} class="fas fa-ellipsis-h" onClick={() => {
-            document.querySelector(".headers").style.backgroundColor= "rgba(0, 0, 0, 0.8)";
+        <i
+          style={{
+            cursor: "pointer",
+            background: "whitesmoke",
+            borderRadius: "20%",
+            padding: "2px",
+          }}
+          class="fas fa-ellipsis-h"
+          onClick={() => {
+            document.querySelector(".headers").style.backgroundColor =
+              "rgba(0, 0, 0, 0.8)";
             document.querySelector(".items").style.display = "grid";
             document.querySelector(".items").style.justifyContent = "right";
             document.querySelector(".fa-times").style.display = "block";
             document.querySelector(".fa-ellipsis-h").style.display = "none";
-        }}></i>
-        <i style={{cursor: "pointer", color: "white", display: "none"}} class="fas fa-times" onClick={() => {
+            // document.querySelector(".react-reveal").style.position = "relative";
+            // document.querySelector(".react-reveal").style.zIndex = "1";
+          }}
+        ></i>
+        <i
+          style={{ cursor: "pointer", color: "white", display: "none" }}
+          class="fas fa-times"
+          onClick={() => {
             document.querySelector(".items").style.display = "none";
             document.querySelector(".fa-times").style.display = "none";
             document.querySelector(".fa-ellipsis-h").style.display = "block";
-            document.querySelector(".headers").style.backgroundColor= "rgba(0, 0, 0, 0)";
-        }}></i>
+            document.querySelector(".headers").style.backgroundColor =
+              "rgba(0, 0, 0, 0)";
+          }}
+        ></i>
       </div>
     </section>
   );
