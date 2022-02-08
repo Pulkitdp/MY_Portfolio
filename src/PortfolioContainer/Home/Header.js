@@ -38,8 +38,8 @@ export default function Header() {
             document.querySelector(".items").style.justifyContent = "right";
             document.querySelector(".fa-times").style.display = "block";
             document.querySelector(".fa-ellipsis-h").style.display = "none";
-            // document.querySelector(".react-reveal").style.position = "relative";
-            // document.querySelector(".react-reveal").style.zIndex = "1";
+            document.querySelector(".react-reveal").style.position = "relative";
+            document.querySelector(".react-reveal").style.zIndex = "1";
           }}
         ></i>
         <i
@@ -51,6 +51,8 @@ export default function Header() {
             document.querySelector(".fa-ellipsis-h").style.display = "block";
             document.querySelector(".headers").style.backgroundColor =
               "rgba(0, 0, 0, 0)";
+            document.querySelector(".react-reveal").style.position = "unset";
+            document.querySelector(".react-reveal").style.zIndex = "0";
           }}
         ></i>
       </div>
